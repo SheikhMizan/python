@@ -24,3 +24,7 @@ people = [
 
 with open('people.json', 'w') as people_json:
     json.dump(people, people_json)
+
+    
+  #  >>> import requests 
+  # >>> response = requests.get('https://www.google.com')
