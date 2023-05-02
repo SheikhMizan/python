@@ -1,3 +1,4 @@
+  GNU nano 5.4                                                                                                    run.py                                                                                                             
 #! /usr/bin/env python3
 import os
 import requests
@@ -6,7 +7,7 @@ import requests
 List all .txt files under /data/feedback directory that contains the actual feedback to be displayed on the company's website.
 Hint: Use os.listdir() method for this, which returns a list of all files and directories in the specified path.
 '''
-dir = "/data/feedback/"
+directory = "/data/feedback/"
 for file in os.listdir("/data/feedback/"): 
     '''
     You should now have a list that contains all of the feedback files from the path /data/feedback. 
@@ -20,7 +21,7 @@ for file in os.listdir("/data/feedback/"):
     '''
     content = {}
     
-    with open('{}/{}'.format(dir,file), 'r') as txtfile:
+    with open('{}/{}'.format(directory,file), 'r') as txtfile:
         counter = 0
         for line in txtfile:
             line = line.replace("\n", "")
